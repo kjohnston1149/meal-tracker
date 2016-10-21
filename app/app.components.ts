@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { X } from './template.model';
+import { Meal } from './template.model';
 
 @Component({
   selector: 'my-app',

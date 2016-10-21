@@ -1,3 +1,3 @@
-export class X {
+export class Meal {
   constructor() {  }
 }
