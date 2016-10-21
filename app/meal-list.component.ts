@@ -4,7 +4,7 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'meal-list',
   template:`
-  <div *ngFor="let currentMeal of childMealList">
+  <div *ngFor="let currentMeal of childMealList" class="well">
   <h2>{{ currentMeal.mealName }}</h2>
   <h4>Calories in this meal: {{ currentMeal.calories }}</h4>
   <h4>Description or notes: {{ currentMeal.description }}</h4>
