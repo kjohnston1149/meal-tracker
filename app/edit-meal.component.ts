@@ -5,11 +5,11 @@ import { Meal } from './meal.model';
   selector: 'edit-meal',
   template: `
   <div *ngIf="childSelectedMeal">
+  <div class="form">
     <h3>Edit this Meal</h3>
-    <form>
     <div>
       <label>Enter Meal name:</label>
-      <input [(ngModel)]="childSelectedMeal.name">
+      <input [(ngModel)]="childSelectedMeal.mealName">
     </div>
     <div>
       <label>Enter Calorie Count</label>
@@ -21,7 +21,7 @@ import { Meal } from './meal.model';
       <button  class="btn btn-default"
       (click)="doneClicked()">Finsih</button>
     </div>
-    </form>
+    </div>
   </div>
   `
 })
