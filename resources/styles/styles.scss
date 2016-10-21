@@ -2,7 +2,7 @@ $color: purple;
 
 $light-green: linear-gradient(-129deg, #CFF69F 0%, #ACED73 70%, #A2EA66 91%);
 
-$dark-green: #73A14D;
+$dark-green: rgba(115, 161, 77, 0.85);
 
 $orange: #FC7D4B;
 
@@ -11,27 +11,36 @@ $blue: #34AC79;
 body {
   font-family: monospace;
   background-image: url(../../resources/images/food-background.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
 }
 
 select {
   align-self: center;
   margin: 5px;
+  text-align: right;
 }
 
-new-meal {
-  color: black;
+new-meal{
+  color: #4E443D;
   text-shadow: black 20px;
+
 }
 
 .jumbotron {
-  color: white;
-  font-size: 4em;
-  text-align: right;
+  color: black;
+  font-size: 6em;
+  text-align: center;
   text-shadow: 2px;
-  background-color: rgba(251,203,132,0.8);
-  height: 2em;
+  background: $light-green;
+  opacity: 0.76;
+  // height: 2em;
 
   // background-image: url(../../resources/images/healthy-food.jpg);
   // background-size: cover;
@@ -45,10 +54,15 @@ new-meal {
 .btn {
   margin: 5px;
 }
+
+.modal-header {
+  text-align: center;
+  font-size: 3em;
+}
+
 #mainWell {
   position: static;
   background-color: $dark-green;
-  opacity: 0.8;
 }
 
 #subWell {

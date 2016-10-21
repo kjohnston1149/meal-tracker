@@ -16,17 +16,18 @@ import { Meal } from './meal.model';
 
           <div>
             <label>Enter Meal name:</label>
-            <input [(ngModel)]="childSelectedMeal.mealName">
+            <input class="form-control" [(ngModel)]="childSelectedMeal.mealName">
           </div>
           <div>
             <label>Enter Calorie Count</label>
-            <input [(ngModel)]="childSelectedMeal.calories">
+            <input class="form-control" [(ngModel)]="childSelectedMeal.calories">
           </div>
           <div>
             <label>Enter Notes:</label>
-            <input [(ngModel)]="childSelectedMeal.description">
+            <input class="form-control" [(ngModel)]="childSelectedMeal.description">
+            <br>
             <button  class="btn btn-default" data-dismiss="modal"
-            (click)="doneClicked()">Finsih</button>
+            (click)="doneClicked()">Finish</button>
           </div>
           </div>
           </div>

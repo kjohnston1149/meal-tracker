@@ -5,6 +5,7 @@ import { Meal } from './meal.model';
   selector: 'meal-list',
   template:`
   <div id="mainWell" class="well">
+  <h1>My Meals</h1>
     <!--High Calorie DropDown Selector-->
     <label>Display high and low calorie meals</label>
     <select (change)="onChange($event.target.value)" class="fiter form-control">
