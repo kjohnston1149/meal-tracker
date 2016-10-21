@@ -5,7 +5,7 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   template: `
   <div class="container">
-  <h1>This was a triumph</h1>
+  <h1 class="jumbotron">Meal Tracker</h1>
   <new-meal
   (newMealSender)="addMeal($event)"></new-meal>
   <meal-list

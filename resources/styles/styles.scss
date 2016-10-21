@@ -1,5 +1,58 @@
 $color: purple;
 
-h1 {
-  color: $color;
+$light-green: linear-gradient(-129deg, #CFF69F 0%, #ACED73 70%, #A2EA66 91%);
+
+$dark-green: #73A14D;
+
+$orange: #FC7D4B;
+
+$blue: #34AC79;
+
+body {
+  font-family: monospace;
+  background-image: url(../../resources/images/food-background.jpg);
+  background-size: cover;
+
+}
+
+select {
+  align-self: center;
+  margin: 5px;
+}
+
+new-meal {
+  color: black;
+  text-shadow: black 20px;
+}
+
+.jumbotron {
+  color: white;
+  font-size: 4em;
+  text-align: right;
+  text-shadow: 2px;
+  background-color: rgba(251,203,132,0.8);
+  height: 2em;
+
+  // background-image: url(../../resources/images/healthy-food.jpg);
+  // background-size: cover;
+
+}
+.well {
+  align-self: center;
+  // opacity: 0.8;
+}
+
+.btn {
+  margin: 5px;
+}
+#mainWell {
+  position: static;
+  background-color: $dark-green;
+  opacity: 0.8;
+}
+
+#subWell {
+background-image: linear-gradient(150deg, #CFF69F 0%, #ACED73 70%, #A2EA66 91%);
+border: 1px solid #979797;
+text-align: center;
 }
