@@ -6,14 +6,14 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
   <h1>This was a triumph</h1>
+  <new-meal
+  (newMealSender)="addMeal($event)"></new-meal>
   <meal-list
   [childMealList]="masterMealList"
   (clickSender)="showDetails($event)"></meal-list>
   <edit-meal
   [childSelectedMeal]="selectedMeal"
   (doneClickedSender)="finishedEditing()"></edit-meal>
-  <new-meal
-  (newMealSender)="addMeal($event)"></new-meal>
   </div>
   `
 })
