@@ -6,7 +6,12 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
   <h1>This was a triumph</h1>
-  <meal-list></meal-list>
+  <meal-list
+  [childMealList]="masterMealList"
+  (clickSender)="showDetails($event)"></meal-list>
+  <edit-meal
+  [childSelectedMeal]="selectedMeal"
+  (doneClickedSender)="finishedEditing()"></edit-meal>
   </div>
   `
 })
@@ -17,5 +22,14 @@ export class AppComponent {
     new Meal("Apple Pie", 1000, "Worth it."),
     new Meal("Carrots", 100, "Making Progress.")
   ];
+  selectedMeal: Meal = null;
+  showDetails(clickedMeal: Meal) {
+    this.selectedMeal = clickedMeal;
+  }
+
+finishedEditing() {
+  this.selectedMeal = null;
+}
+
 
 }
