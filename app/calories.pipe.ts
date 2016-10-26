@@ -12,14 +12,14 @@ export class CalorieDisplayPipe implements PipeTransform {
 
     if(selectedCalorieDisplay === "low") {
       for (var i = 0; i < input.length; i++) {
-        if(input[i].highCalorie === false) {
+        if(input[i].calories < 500) {
           output.push(input[i]);
         }
       }
       return output;
     } else if(selectedCalorieDisplay === "high") {
       for (var i = 0; i < input.length; i++) {
-        if(input[i].highCalorie === true) {
+        if(input[i].calories >= 500) {
           output.push(input[i]);
         }
       }
